@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Gagalin';
+    src: url('assets/Gagalin-Regular.otf');
+}
+
+@font-face {
+    font-family: 'LemonShake';
+    src: url('assets/SunnyspellsRegular-MV9ze.otf');
+}
+
+@font-face {
+    font-family: 'Sunny Spells';
+    src: url('assets/LemonShakeShake-OGMrd.ttf') format("ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-bg-color: #f9db79;;
+  --primary-font-color: white;
+  --secondary-bg-color: #fdedba;
+  --secondary-font-color: #412f2d;
+  --button-color: #dc8b39;
+}
+
+/* navigation bar */
+.navbar {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation bar links */
+.navbar a {
+  color: #412f2d;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: var(--button-color);
+  color: white;
+}
+
+body{
+  background-color: var(--primary-bg-color);
+  color: var(--primary-font-color);
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Front page heading */
+.sctn-primary-header{
+  padding: 50px;
+  text-align: center;
+}
+
+.primary-header {
+  font-size: 80px;
+}
+
+.secondary-header {
+  font-size: 60px;
+}
+
+.book-button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .flex-container, .navbar {   
+    flex-direction: column;
+  }
+}
+
+div.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+div.flex-container > div {
+  margin: 10px;
+}
+
+.our-Services{
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-font-color);
+  text-align: center;
+  padding: 5% 20%;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: var(--primary-bg-color)
+}
